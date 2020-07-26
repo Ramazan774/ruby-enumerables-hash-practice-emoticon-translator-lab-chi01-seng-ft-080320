@@ -18,26 +18,24 @@ end
 def get_english_meaning (file_path, japanese_emo)
   emoticons = load_library(file_path)
   sorry_message = "Sorry, that emoticon was not found"
-  emoticons.each do |emos, language|
-      if emoticon[:japanese] == japanese_emo
-        eng_translation = emos 
+  emoticons.each do |eng_meaning, language|
+      if language[:japanese] == japanese_emo
+        puts eng_meaning 
       else
-        sorry_message
+        puts sorry_message
 end
 end
 end
-eng_translation
+eng_meaning
 end
 
 def get_japanese_emoticon(file_path, english_emo)
+  emoticons = load_library(file_path)
+  sorry_message = "Sorry, that emoticon was not found"
+  emoticons.each do |jap_meaning, language|
+    if language[:english] == english_emo
+      jap_meaning = 
   
-  translation = ""
-  new_hash = load_library(yaml_file)
-  new_hash.each do |name, languages|
-    eng_emote == languages[:english]
-    japanese_emote = languages[:japanese]
-    if japanese_emote == passed_in_emote
-      return eng_emote
 end
 end
 end
