@@ -2,8 +2,8 @@
 require "pry"
 require "yaml"
 
-def load_library('lib/emoticons.yml')
-   emo = YAML.load_file(file_path)
+def load_library(file_path)
+   emo = YAML.load_file('lib/emoticons.yml')
    result = {}
    emo.each do |language, value|
      result[name] || = {} 
