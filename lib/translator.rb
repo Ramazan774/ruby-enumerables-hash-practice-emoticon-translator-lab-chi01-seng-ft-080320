@@ -3,12 +3,13 @@ require "pry"
 require "yaml"
 
 def load_library(file_path)
-  binding.pry
    emo = YAML.load_file(file_path)
    result = {}
-   emo.each do |language, value|
-     result[language][:english] = value[0]
-     result[language][:japanese] = value[1]
+   result = emo.each do |language, value|
+     language => {
+       :english => value[0],
+       :japanese => value[1]
+     }
    end
   result
 end
