@@ -6,7 +6,6 @@ def load_library(file_path)
    emo = YAML.load_file(file_path)
    result = {}
    emo.each do |language, value|
-     result[language] || = {} 
      result[language][:english] = value[0]
      result[language][:japanese] = value[1]
    end
