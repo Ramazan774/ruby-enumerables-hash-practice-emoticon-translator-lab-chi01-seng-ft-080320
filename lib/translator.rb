@@ -32,9 +32,8 @@ def get_japanese_emoticon(file_path, english_emoticon)
   emoticons.each do |jap_meaning, language|
     if language[:english] == english_emoticon
       puts jap_meaning
-    else
-      puts sorry_message
 end
 end
+sorry_message
 end
 
