@@ -3,12 +3,13 @@ require "pry"
 require "yaml"
 
 def load_library(file_path)
-   emo = YAML.load_file("lib/emoticons.yml")
+   emo = YAML.load_file(file_path)
    results = emo.each_with_object({}) do |(name, value), final_hash|
      if !final_hash[name]
-       final_hash[name] = {}
-     result[name][:english] = value[0]
-     result[name][:japanese] = value[1]
+       final_hash[name] = {
+     :english = value[0],
+     :japanese = value[1]
+       }
    end
  end
   result
