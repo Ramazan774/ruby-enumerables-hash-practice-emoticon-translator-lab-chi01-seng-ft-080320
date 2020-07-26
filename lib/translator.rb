@@ -31,7 +31,6 @@ end
 end
 eng_translation
 end
-end
 
 def get_japanese_emoticon(yaml_file, eng_emoti)
   translation = ""
