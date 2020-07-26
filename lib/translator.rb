@@ -21,8 +21,8 @@ def get_english_meaning (emoticon_library, japanese_emo)
   apology = "Sorry, that emoticon was not found"
   emoticons.each do |emotion, lang|
     lang.each do |inner_key, emoticon|
-      if emoticon == j_emoticon
-        eng_meaning = emotion
+      if emoticon == japanese_emo
+        eng_translation = emoticon 
       end
 end
 if eng_meaning == ""
