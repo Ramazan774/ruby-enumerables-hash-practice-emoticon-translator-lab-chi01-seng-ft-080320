@@ -6,6 +6,7 @@ def load_library('lib/emoticons.yml')
    emo = YAML.load_file(file_path)
    result = {}
    emo.each do |language, value|
+     result[name] || = {} 
      result[language][:english] = value[0]
      result[language][:japanese] = value[1]
    end
