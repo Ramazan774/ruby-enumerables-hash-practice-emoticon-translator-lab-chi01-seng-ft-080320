@@ -15,8 +15,8 @@ def load_library(file_path)
   result
 end
 
-def get_english_meaning (file, j_emoticon)
-  emoticons = load_library(file)
+def get_english_meaning (emoticon_library, japanese_emo)
+  emoticon_library = load_library(file)
   eng_meaning = ""
   apology = "Sorry, that emoticon was not found"
   emoticons.each do |emotion, lang|
