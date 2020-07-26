@@ -3,6 +3,7 @@ require "pry"
 require "yaml"
 
 def load_library(file_path)
+  binding.pry
    emo = YAML.load_file(file_path)
    result = {}
    emo.each do |language, value|
