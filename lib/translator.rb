@@ -42,5 +42,5 @@ def get_japanese_emoticon(yaml_file, eng_emoti)
       return eng_emote
 end
 end
-
+end
 
