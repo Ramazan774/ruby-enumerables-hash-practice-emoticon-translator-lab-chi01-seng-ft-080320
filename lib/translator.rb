@@ -10,6 +10,7 @@ def load_library(file_path)
      result[name][:english] = value[0]
      result[name][:japanese] = value[1]
    end
+ end
   result
 end
 
