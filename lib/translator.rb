@@ -3,9 +3,10 @@ require "pry"
 require "yaml"
 
 def load_library(file_path)
-   emo = YAML.load_file('lib/emoticons.yml')
+   emo = YAML.load_file("lib/emoticons.yml")
    result = {}
    emo.each do |language, value|
+     result[name][value] = {}
      result[language][:english] = value[0]
      result[language][:japanese] = value[1]
    end
