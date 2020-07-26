@@ -25,6 +25,7 @@ def get_english_meaning (file_path, japanese_emo)
         puts sorry_message
 end
 end
+eng_meaning
 end
 
 def get_japanese_emoticon(file_path, english_emo)
@@ -37,5 +38,6 @@ def get_japanese_emoticon(file_path, english_emo)
       puts sorry_message
 end
 end
+jap_meaning
 end
 
