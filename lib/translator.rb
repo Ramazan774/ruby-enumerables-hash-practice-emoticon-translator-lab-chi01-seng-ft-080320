@@ -7,8 +7,8 @@ def load_library(file_path)
    result = emo.each_with_object({}) do |(name, value), final_hash|
      if !final_hash[name]
        final_hash[name] = {
-     :english = value[0],
-     :japanese = value[1]
+     :english => value[0],
+     :japanese => value[1]
        }
    end
  end
